@@ -1,0 +1,24 @@
+<div>
+  <h2>All entries in database:</h2>
+
+
+<% @cats.each do |cat| %>
+	<h2><b><%= cat.id %></b></h2>
+	<h2><b><%= cat.name %></b></h2>
+	<br />
+<% end %>
+<% @todos.each do |todo| %>
+	<h2><b><%= todo.id %></b></h2>
+	<h2><b><%= todo.tasks %></b></h2>
+  <h2><b><%= todo.finished %></b></h2>
+  <br />
+<% end %>
+<% @users.each do |user| %>
+
+	<h2><b><%= user.id %></b></h2>
+	<h2><b><%= user.username %></b></h2>
+	<h2><b><%= user.email %></b></h2>
+	<br />
+<% end %>
+
+</div>
